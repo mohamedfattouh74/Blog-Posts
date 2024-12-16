@@ -1,0 +1,14 @@
+.background-pattern {
+  height: 300px;
+  width: 100%;
+  margin-top: -60px;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  z-index: 1;
+}
+
+.blog-posts {
+  position: relative; 
+  z-index: 2;
+}

@@ -1,0 +1,66 @@
+:host {
+  display: block;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-block: 96px;
+  background-color: #F9F5FF;
+}
+
+.header-flag{
+  background-color: #ede1ff;
+  color: #6941C6;
+  font-size: 14px;
+  text-align: center;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+.header-title{
+  color: #42307D;
+  line-height: 60px;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header-description{
+  color: #6941C6;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+input.search-blog {
+  width: 320px;
+  padding: 10px 12px;
+  padding-left: 40px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input.search-blog:focus-visible{
+  border: 1px solid #a9acb3;
+}
+
+.input-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px; 
+}

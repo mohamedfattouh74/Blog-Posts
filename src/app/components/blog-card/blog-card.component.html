@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="image-container">
+        <img class="post-image" alt="Blog Post Image" [src]="blogPost.social_image">
+    </div>
+    <div class="card-info">
+        <div class="title-container">
+            <p [title]="blogPost?.title" class="card-title">{{truncateTitle(blogPost?.title, 5)}}</p>
+            <img src="/assets/arrow-up-right.svg">
+        </div>
+        <p class="card-description">{{blogPost.description}}</p>
+    </div>
+    <div class="user-info">
+        <img class="user-image" [src]="blogPost?.user?.profile_image">
+        <div>
+            <p class="user-name">{{blogPost?.user?.name}}</p>
+            <p class="post-date">{{blogPost?.published_at | date}}</p>
+        </div>
+    </div>
+</div>
+

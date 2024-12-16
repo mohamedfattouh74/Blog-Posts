@@ -1,0 +1,26 @@
+
+@defer {
+    <div class="container">
+        @for (post of blogPosts| paginate : { itemsPerPage: perPageSize,
+            currentPage: page, totalItems: count }; track post.id) {
+            <blog-card [blogPost]='post'></blog-card>
+            
+        } @empty {
+            <p class="no-items">There are currently no blog posts.</p>
+        }
+    </div>
+  } @loading (minimum 1s) {
+        <loader></loader>
+  }
+
+  @if (!isLoading && blogPosts.length>0) {
+    <div>
+        <pagination-controls
+          previousLabel="Prev"
+          nextLabel="Next"
+          (pageChange)="onPageChange($event)"
+        >
+        </pagination-controls>
+      </div>
+    
+  }
